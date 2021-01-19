@@ -66,6 +66,8 @@ ul {
   }
 }
 
+/*End of Nav Bar Top*/
+
 /*Nav bar Bottom*/
 .nav-bottom {
   position: relative;
@@ -128,4 +130,87 @@ ul {
   .nav-link {
     display: none;
   }
+}
+
+/*End of Nav bar bottom*/
+
+/*Main body*/
+
+/*Cover */
+.cover {
+    margin: 0 auto;
+    padding: 4px;
+    position: relative;
+}
+.head-article,
+.side-articles{
+    display: block;
+    position: relative;
+}
+.background-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    bottom: 4px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: #000;
+    background-position: 50%;
+    z-index: 1;
+}
+@media(min-width: 1024px){
+    .cover{
+        height: 75vh;
+        max-height: 560px;
+    }
+
+    .head-article{
+        height: 100%;
+        width: 66.6%;
+        float: left;
+        padding: 4px;
+        overflow: hidden;
+        position: relative;
+    }
+    .side-articles{
+        height: 50%;
+        width: 33.3%;
+        float: left;
+        overflow: hidden;
+        padding: 4px;
+        position: relative;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px){
+    .cover{
+        height: 60vh;
+    }
+
+    .head-article{
+        height: 100%;
+        width: 66.6%;
+        float: left;
+        padding: 4px;
+        overflow: hidden;
+    }
+    .side-articles{
+        box-sizing: border-box;
+        height: 50%;
+        width: 33.3%;
+        float: left;
+        overflow: hidden;
+        padding: 4px;
+    }
+}
+
+@media(max-width: 767px){
+    .head-article,
+.side-articles{
+    min-height: 30vh;
+    margin-bottom: 10px;
+}
+
 }
