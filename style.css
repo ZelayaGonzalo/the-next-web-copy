@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Shentox';
+  src: url('./Fonts/Shentox.ttf') format('ttf');
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  color: #555;
+}
+ol,
+ul {
+  list-style: none;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+  text-rendering: optimizeLegibility;
+}
+
+/*Nav bar Top*/
+
+.nav-top {
+  background: #131313;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+  max-height: 32px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  color: #898989;
+}
+.nav-right {
+  display: flex;
+}
+
+.nav-top li {
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.nav-top li:hover {
+  color: white;
+  text-decoration: underline;
+}
+.company-top ul {
+  display: flex;
+}
+.company-top ul:last-child {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-top {
+    display: none;
+  }
+}
+
+/*Nav bar Bottom*/
+.nav-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.nav-logo {
+  position: absolute;
+  width: 106px;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+
+.nav-section {
+  display: flex;
+}
+.nav-link {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Shentox' sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #aaa;
+  display: block;
+  height: 48px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding-top: 18px;
+  margin-left: 12px;
+}
+.nav-link:first-child {
+  margin-left: 60px;
+}
+.nav-link:hover {
+  color: black;
+  cursor: pointer;
+}
+.nav-bottom .icons {
+  display: flex;
+}
+.nav-bottom .icons .fas {
+  font-size: 20px;
+  padding: 12px;
+  border-left: 1px solid #eee;
+  cursor: pointer;
+}
+.fa-bars {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .fa-bars {
+    display: block;
+  }
+  .nav-link {
+    display: none;
+  }
+}
